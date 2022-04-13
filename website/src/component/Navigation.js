@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
-import { Container, Nav, Navbar } from 'react-bootstrap';
+import React, {Component} from 'react';
+import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
 
-class Navbar extends Component {
+class Navigation extends Component {
     render() {
         return (
             <>
@@ -29,4 +29,4 @@ class Navbar extends Component {
     };
 }
 
-export default Navbar;
+export default Navigation;

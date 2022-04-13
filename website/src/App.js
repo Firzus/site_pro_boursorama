@@ -12,7 +12,7 @@ const App = () => {
           <Route path="/" exact element={<Home />} />
           <Route path="/commander-sa-carte" exact element={<OrderCard />} />
           <Route path="/espace-client" exact element={<CustomerArea />} />
-          <Route element={<NotFound />} />
+          <Route path='*' element= {<NotFound/>} />
         </Routes>
       </BrowserRouter>
   );
