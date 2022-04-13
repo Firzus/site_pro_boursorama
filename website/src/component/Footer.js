@@ -7,7 +7,7 @@ class Footer extends Component {
         return (
             <>
                 <Navbar bg="black">
-                        <Navbar.Brand href="#" className=''>
+                        <Navbar.Brand>
                             <img
                                 src="/img/logo_boursorama_black.png"
                                 width="180"

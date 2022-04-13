@@ -1,28 +1,31 @@
-import React, {Component} from 'react';
-import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
+import React, { Component } from 'react';
+import { Button, Container, Navbar } from 'react-bootstrap';
+import '../fonts/Helvetica/Helvetica-Neue-Light.ttf';
 
 class Navigation extends Component {
     render() {
         return (
             <>
-                <Navbar bg="light" expand="lg">
-                    <Container>
-                        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
-                        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                        <Navbar.Collapse id="basic-navbar-nav">
-                            <Nav className="me-auto">
-                                <Nav.Link href="#home">Home</Nav.Link>
-                                <Nav.Link href="#link">Link</Nav.Link>
-                                <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-                                    <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                                    <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-                                    <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                                    <NavDropdown.Divider />
-                                    <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-                                </NavDropdown>
-                            </Nav>
-                        </Navbar.Collapse>
+                <Navbar bg="white" fixed="top">
+                    <Navbar.Brand>
+                        <img
+                            src="/img/logo_boursorama_color.png"
+                            width="175"
+                            height="36"
+                            href="#"
+                            className="d-inline-block align-top margin-left"
+                            alt="Logo Boursorama"
+                        />
+                    </Navbar.Brand>
+                    <Navbar.Collapse id="basic-navbar-nav">
+                    <Container className='d-flex justify-content-center'>
+                        <Navbar.Brand href="#home" className='text-uppercase font-face-hnl fs-3 fw-bold'>accueil</Navbar.Brand>
+                        <Navbar.Brand href="#home" className='text-uppercase font-face-hnl fs-3 fw-bold'>carte</Navbar.Brand>
+                        <Navbar.Brand href="#home" className='text-uppercase font-face-hnl fs-3 fw-bold'>tournois</Navbar.Brand>
+                        <Navbar.Brand href="#home" className='text-uppercase font-face-hnl fs-3 fw-bold'>faq</Navbar.Brand>
                     </Container>
+                    <Button className='margin-right' variant="secondary">Secondary</Button>{' '}
+                    </Navbar.Collapse>
                 </Navbar>
             </>
         );

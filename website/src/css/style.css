@@ -1,3 +1,17 @@
+@font-face {
+    font-family: "HelveticaNeueLight";
+    src: local("HelveticaNeueLight"),
+        url("../fonts/Helvetica/Helvetica-Neue-Light.ttf") format("truetype");
+}
+
+.font-face-hnl {
+    font-family: "HelveticaNeueLight";
+}
+
 .margin-left {
     margin-left: 10%;
+}
+
+.margin-right {
+    margin-right: 1%;
 }
