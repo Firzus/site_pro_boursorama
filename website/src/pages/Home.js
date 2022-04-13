@@ -1,11 +1,10 @@
-import Navigation from "../component/Navigation";
+import Footer from "../component/Footer";
 
 
 const Home = () => {
     return (
         <div className="home">
-            <h1>Home</h1>
-            <Navigation />
+            <Footer/>
         </div>
     )
 }
