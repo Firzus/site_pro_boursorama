@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Button, Container, Nav, Navbar } from 'react-bootstrap';
 import '../fonts/Helvetica/Helvetica-Neue-Light.ttf';
+import { Link } from 'react-router-dom';
 
 class Navigation extends Component {
     render() {
@@ -21,10 +22,10 @@ class Navigation extends Component {
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Container className='d-flex justify-content-evenly'>
                             <Nav>
-                                <Navbar.Brand href="#home" className='text-uppercase font-face-hnl fs-3 margin-right margin-left'>accueil</Navbar.Brand>
-                                <Navbar.Brand href="#home" className='text-uppercase font-face-hnl fs-3 margin-right margin-left'>carte</Navbar.Brand>
-                                <Navbar.Brand href="#home" className='text-uppercase font-face-hnl fs-3 margin-right margin-left'>tournois</Navbar.Brand>
-                                <Navbar.Brand href="#home" className='text-uppercase font-face-hnl fs-3 margin-right margin-left'>faq</Navbar.Brand>
+                                <Navbar.Brand as="button" className='text-uppercase font-face-hnl fs-3 margin-right margin-left'><Link to="/">accueil</Link></Navbar.Brand>
+                                <Navbar.Brand as="button" className='text-uppercase font-face-hnl fs-3 margin-right margin-left'><Link to="/commander-sa-carte">Cart</Link></Navbar.Brand>
+                                <Navbar.Brand as="button" className='text-uppercase font-face-hnl fs-3 margin-right margin-left'><Link to="/tournois">Tournois</Link></Navbar.Brand>
+                                <Navbar.Brand as="button" className='text-uppercase font-face-hnl fs-3 margin-right margin-left'><Link to="/FAQ">FAQ</Link></Navbar.Brand>
                             </Nav>
                         </Container>
                         <Nav>

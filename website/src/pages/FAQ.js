@@ -1,5 +1,3 @@
-import Footer from "../component/Footer";
-import Navigation from "../component/Navigation";
 import { Component } from "react";
 
 class FAQ extends Component {
@@ -13,9 +11,7 @@ class FAQ extends Component {
     render() {
         return (
             <div className="home" >
-              <Navigation />
-              <Footer />
-                <h1>Home</h1>
+                <h1>FAQ</h1>
             </div>
         )
     }
