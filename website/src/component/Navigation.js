@@ -17,23 +17,25 @@ class Navigation extends Component {
                             alt="Logo Boursorama"
                         />
                     </Navbar.Brand>
-                    <Navbar.Toggle aria-controls="responsive-navbar-nav" className='margin-right'/>
+                    <Navbar.Toggle aria-controls="responsive-navbar-nav" className='margin-right' />
                     <Navbar.Collapse id="responsive-navbar-nav">
-                        <Container className='d-flex justify-content-center'>
-                            <Nav className="me-auto">
-                                <Navbar.Brand href="#home" className='text-uppercase font-face-hnl fs-3 margin-left margin-right'>accueil</Navbar.Brand>
-                                <Navbar.Brand href="#home" className='text-uppercase font-face-hnl fs-3 margin-left margin-right'>carte</Navbar.Brand>
-                                <Navbar.Brand href="#home" className='text-uppercase font-face-hnl fs-3 margin-left margin-right'>tournois</Navbar.Brand>
-                                <Navbar.Brand href="#home" className='text-uppercase font-face-hnl fs-3 margin-left margin-right'>faq</Navbar.Brand>
+                        <Container className='d-flex justify-content-evenly'>
+                            <Nav>
+                                <Navbar.Brand href="#home" className='text-uppercase font-face-hnl fs-3 margin-right margin-left'>accueil</Navbar.Brand>
+                                <Navbar.Brand href="#home" className='text-uppercase font-face-hnl fs-3 margin-right margin-left'>carte</Navbar.Brand>
+                                <Navbar.Brand href="#home" className='text-uppercase font-face-hnl fs-3 margin-right margin-left'>tournois</Navbar.Brand>
+                                <Navbar.Brand href="#home" className='text-uppercase font-face-hnl fs-3 margin-right margin-left'>faq</Navbar.Brand>
                             </Nav>
                         </Container>
                         <Nav>
-                            <Button
-                                href='#home'
-                                className='margin-right margin-left text-uppercase font-face-hnl fs-3'
-                                variant="secondary">
-                                espace client
-                            </Button>
+                            <Container>
+                                <Button
+                                    href='#home'
+                                    className='text-uppercase font-face-hnl fs-3 d-flex justify-content-center'
+                                    variant="secondary">
+                                    espace client
+                                </Button>
+                            </Container>
                         </Nav>
                     </Navbar.Collapse>
                 </Navbar>
