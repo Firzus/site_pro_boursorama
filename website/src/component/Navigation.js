@@ -21,8 +21,8 @@ class Navigation extends Component {
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Container className='d-flex justify-content-evenly'>
                             <Nav>
-                                <Navbar.Brand as="button" className='text-uppercase font-face-hnl fs-3 margin-right margin-left font-face-hnl' href="#">accueil</Navbar.Brand>
-                                <Navbar.Brand as="button" className='text-uppercase font-face-hnl fs-3 margin-right margin-left font-face-hnl'><Link to="/commander-sa-carte">cartes</Link></Navbar.Brand>
+                                <Navbar.Brand as="button" className='text-uppercase font-face-hnl fs-3 margin-right margin-left font-face-hnl'><Link to="/">accueil</Link></Navbar.Brand>
+                                <Navbar.Brand as="button" className='text-uppercase font-face-hnl fs-3 margin-right margin-left font-face-hnl'><Link to="/commander-sa-carte">carte</Link></Navbar.Brand>
                                 <Navbar.Brand as="button" className='text-uppercase font-face-hnl fs-3 margin-right margin-left font-face-hnl'><Link to="/tournois">tournois</Link></Navbar.Brand>
                                 <Navbar.Brand as="button" className='text-uppercase font-face-hnl fs-3 margin-right margin-left font-face-hnl'><Link to="/faq">faq</Link></Navbar.Brand>
                             </Nav>
