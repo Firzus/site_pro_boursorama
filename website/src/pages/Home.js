@@ -14,7 +14,7 @@ class Home extends Component {
 
   render() {
     return (
-      <div className="home" >
+      <div className="home background">
         <Navigation />
         <Container className="pt-5 pb-2">
           <Row className="pt-3 pb-3">
@@ -30,26 +30,24 @@ class Home extends Component {
                   notre steam spécial, ne ratez aucun match !
                 </Col>
               </Row>
-              <Row className="pt-2">
-                <div>
+              <Row className="pt-2 d-flex justify-content-center">
                   <ReactPlayer
                     url="https://www.twitch.tv/BoursoramaEsport"
                     controls
                   />
-                </div>
               </Row>
             </Container>
           </Row>
 
           <Row className="pt-3 pb-3 d-flex justify-content-center">
-            <Col xs={8} className="margin-left margi-right">
+            <Col xs={8}>
               <Row className="pb-1">
-                <Col className="fs-1 text-center text-uppercase">
+                <Col className="font-face-hnl fs-1 text-center text-uppercase">
                   la carte boursorama banque à ton effigie !
                 </Col>
               </Row>
               <Row className="pt-1 pb-1">
-                <Col className="fs-5 text-center">
+                <Col className="font-face-hnl fs-5 text-center">
                   La carte Collection League of Legends permet la participation
                   aux tirages au sort pour les clients afin de vivre l'esport
                   au plus près de l'action et d'échanger avec les meilleurs joueurs.
