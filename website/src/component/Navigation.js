@@ -8,12 +8,11 @@ class Navigation extends Component {
         return (
             <>
                 <Navbar collapseOnSelect expand="lg" bg="white" fixed="top">
-                    <Navbar.Brand>
+                    <Navbar.Brand href="#">
                         <img
                             src="/img/logo_boursorama_color.png"
                             width="175"
                             height="36"
-                            href="#home"
                             className="d-inline-block align-top margin-left"
                             alt="Logo Boursorama"
                         />
@@ -22,10 +21,10 @@ class Navigation extends Component {
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Container className='d-flex justify-content-evenly'>
                             <Nav>
-                                <Navbar.Brand as="button" className='text-uppercase font-face-hnl fs-3 margin-right margin-left font-face-hnl'><Link to="/">accueil</Link></Navbar.Brand>
-                                <Navbar.Brand as="button" className='text-uppercase font-face-hnl fs-3 margin-right margin-left font-face-hnl'><Link to="/commander-sa-carte">Cart</Link></Navbar.Brand>
-                                <Navbar.Brand as="button" className='text-uppercase font-face-hnl fs-3 margin-right margin-left font-face-hnl'><Link to="/tournois">Tournois</Link></Navbar.Brand>
-                                <Navbar.Brand as="button" className='text-uppercase font-face-hnl fs-3 margin-right margin-left font-face-hnl'><Link to="/FAQ">FAQ</Link></Navbar.Brand>
+                                <Navbar.Brand as="button" className='text-uppercase font-face-hnl fs-3 margin-right margin-left font-face-hnl' href="#">accueil</Navbar.Brand>
+                                <Navbar.Brand as="button" className='text-uppercase font-face-hnl fs-3 margin-right margin-left font-face-hnl'><Link to="/commander-sa-carte">cartes</Link></Navbar.Brand>
+                                <Navbar.Brand as="button" className='text-uppercase font-face-hnl fs-3 margin-right margin-left font-face-hnl'><Link to="/tournois">tournois</Link></Navbar.Brand>
+                                <Navbar.Brand as="button" className='text-uppercase font-face-hnl fs-3 margin-right margin-left font-face-hnl'><Link to="/faq">faq</Link></Navbar.Brand>
                             </Nav>
                         </Container>
                         <Nav>
