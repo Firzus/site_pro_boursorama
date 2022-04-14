@@ -13,7 +13,7 @@ class Home extends Component {
 
     render() {
         return (
-            <div className="home" >
+            <div className="home background" >
                 <Navigation />
                 <Container className="pt-5 pb-2">
                     <Row className="pt-3 pb-3">
