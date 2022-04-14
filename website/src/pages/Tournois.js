@@ -1,6 +1,6 @@
 import { Component } from "react";
 
-class OrderCards extends Component {
+class Tournois extends Component {
 
     constructor(props) {
         super(props)
@@ -11,10 +11,10 @@ class OrderCards extends Component {
     render() {
         return (
             <div className="home" >
-                <h1>OrderCards</h1>
+                <h1>Tournois</h1>
             </div>
         )
     }
 }
 
-export default OrderCards;
+export default Tournois;
