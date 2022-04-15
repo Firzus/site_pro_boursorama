@@ -30,7 +30,7 @@ class CustomerArea extends Component {
                     <Row s={1}>
                         <Col className=""></Col>
                         <Col className="fs2 text-uppercase">
-                            TU AS DEJA UN COMPTE? CONNECTE TOI!
+                            tu as déja un compte! connecte toi!
                         </Col>
                         <Col s={1}></Col>
                     </Row>
