@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { Button, Container, Nav, Navbar } from 'react-bootstrap';
 import '../fonts/Helvetica/Helvetica-Neue-Light.ttf';
 import { Link } from 'react-router-dom';
+import '../css/style.css';
+
 
 class Navigation extends Component {
     render() {
@@ -21,10 +23,10 @@ class Navigation extends Component {
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Container className='d-flex justify-content-evenly'>
                             <Nav>
-                                <Navbar.Brand as="button" className='text-uppercase font-face-hnl fs-3 margin-right margin-left font-face-hnl'><Link to="/">accueil</Link></Navbar.Brand>
-                                <Navbar.Brand as="button" className='text-uppercase font-face-hnl fs-3 margin-right margin-left font-face-hnl'><Link to="/commander-sa-carte">carte</Link></Navbar.Brand>
-                                <Navbar.Brand as="button" className='text-uppercase font-face-hnl fs-3 margin-right margin-left font-face-hnl'><Link to="/tournois">tournois</Link></Navbar.Brand>
-                                <Navbar.Brand as="button" className='text-uppercase font-face-hnl fs-3 margin-right margin-left font-face-hnl'><Link to="/faq">faq</Link></Navbar.Brand>
+                                <Navbar.Brand as="button" className='text-uppercase font-face-hnl fs-3 margin-right margin-left font-face-hnl'><Link to="/" className='link'>accueil</Link></Navbar.Brand>
+                                <Navbar.Brand as="button" className='text-uppercase font-face-hnl fs-3 margin-right margin-left font-face-hnl'><Link to="/commander-sa-carte" className='link'>carte</Link></Navbar.Brand>
+                                <Navbar.Brand as="button" className='text-uppercase font-face-hnl fs-3 margin-right margin-left font-face-hnl'><Link to="/tournois" className='link'>tournois</Link></Navbar.Brand>
+                                <Navbar.Brand as="button" className='text-uppercase font-face-hnl fs-3 margin-right margin-left font-face-hnl'><Link to="/faq" className='link'>faq</Link></Navbar.Brand>
                             </Nav>
                         </Container>
                         <Nav>
