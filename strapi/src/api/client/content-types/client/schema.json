@@ -1,0 +1,54 @@
+{
+  "kind": "collectionType",
+  "collectionName": "clients",
+  "info": {
+    "singularName": "client",
+    "pluralName": "clients",
+    "displayName": "Client",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Nom": {
+      "type": "string",
+      "required": true
+    },
+    "Prenom": {
+      "type": "string",
+      "required": true
+    },
+    "Email": {
+      "type": "email",
+      "required": true
+    },
+    "Password": {
+      "type": "password",
+      "required": true
+    },
+    "Adresse_Postale": {
+      "type": "string",
+      "required": true
+    },
+    "Birthday": {
+      "type": "string",
+      "required": true
+    },
+    "Newletter": {
+      "type": "integer",
+      "required": true,
+      "default": 0,
+      "private": true,
+      "max": 1,
+      "min": 0
+    },
+    "commande": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::commande.commande",
+      "inversedBy": "client"
+    }
+  }
+}

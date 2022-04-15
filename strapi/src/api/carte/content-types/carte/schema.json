@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cartes",
+  "info": {
+    "singularName": "carte",
+    "pluralName": "cartes",
+    "displayName": "Carte",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Display": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Alt": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
