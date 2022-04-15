@@ -32,7 +32,7 @@ class Home extends Component {
                             </Row>
                             <Row className="pt-2 d-flex justify-content-center">
                                 <ReactPlayer
-                                    url="https://www.twitch.tv/BoursoramaEsport"
+                                    url="https://www.twitch.tv/amouranth"
                                     controls
                                 />
                             </Row>
