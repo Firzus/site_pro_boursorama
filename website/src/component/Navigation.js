@@ -23,18 +23,18 @@ class Navigation extends Component {
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Container className='d-flex justify-content-evenly'>
                             <Nav>
-                                <Navbar.Brand className='text-uppercase font-face-hnl fs-3 margin-right margin-left font-face-hnl' href="#">accueil</Navbar.Brand>
-                                <Navbar.Brand className='text-uppercase font-face-hnl fs-3 margin-right margin-left font-face-hnl'><Link to="/commander-sa-carte" className='link'>carte</Link></Navbar.Brand>
-                                <Navbar.Brand className='text-uppercase font-face-hnl fs-3 margin-right margin-left font-face-hnl'><Link to="/tournois" className='link'>tournois</Link></Navbar.Brand>
-                                <Navbar.Brand className='text-uppercase font-face-hnl fs-3 margin-right margin-left font-face-hnl'><Link to="/faq" className='link'>faq</Link></Navbar.Brand>
+                                <Navbar.Brand className='fw-bold text-uppercase font-face-hnl fs-3 margin-right margin-left font-face-hnl' href="#">accueil</Navbar.Brand>
+                                <Navbar.Brand className='fw-bold text-uppercase font-face-hnl fs-3 margin-right margin-left font-face-hnl'><Link to="/commander-sa-carte" className='link'>carte</Link></Navbar.Brand>
+                                <Navbar.Brand className='fw-bold text-uppercase font-face-hnl fs-3 margin-right margin-left font-face-hnl'><Link to="/tournois" className='link'>tournois</Link></Navbar.Brand>
+                                <Navbar.Brand className='fw-bold text-uppercase font-face-hnl fs-3 margin-right margin-left font-face-hnl'><Link to="/faq" className='link'>faq</Link></Navbar.Brand>
                             </Nav>
                         </Container>
                         <Nav>
                             <Container>
                                 <Button
                                     href='#home'
-                                    className='font-face-hnl text-uppercase font-face-hnl fs-3 d-flex justify-content-center'
-                                    variant="secondary">
+                                    className='fw-bold font-face-hnl text-uppercase fs-3 d-flex justify-content-center text-dark color-button'
+                                    variant="outline-dark">
                                     espace client
                                 </Button>
                             </Container>
