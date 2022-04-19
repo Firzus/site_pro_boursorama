@@ -16,7 +16,9 @@ class Home extends Component {
         return (
             <div className="home background">
                 <Navigation />
+
                 <Container className="pt-5 pb-2">
+
                     <Row className="pt-4 pb-4">
                         <Col>
                             <Row className="pt-2 pb-1">
@@ -32,7 +34,7 @@ class Home extends Component {
                             </Row>
                             <Row className="pt-2 d-flex justify-content-center">
                                 <ReactPlayer
-                                    url="https://www.twitch.tv/aypierre"
+                                    url="https://www.twitch.tv/sharonqueen"
                                     controls
                                 />
                             </Row>
@@ -202,6 +204,7 @@ class Home extends Component {
                     </Row>
 
                 </Container>
+
                 <Footer />
             </div>
         )

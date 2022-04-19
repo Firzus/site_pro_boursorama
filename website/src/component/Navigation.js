@@ -23,10 +23,10 @@ class Navigation extends Component {
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Container className='d-flex justify-content-evenly'>
                             <Nav>
-                                <Navbar.Brand as="button" className='text-uppercase font-face-hnl fs-3 margin-right margin-left font-face-hnl'><Link to="/" className='link'>accueil</Link></Navbar.Brand>
-                                <Navbar.Brand as="button" className='text-uppercase font-face-hnl fs-3 margin-right margin-left font-face-hnl'><Link to="/commander-sa-carte" className='link'>carte</Link></Navbar.Brand>
-                                <Navbar.Brand as="button" className='text-uppercase font-face-hnl fs-3 margin-right margin-left font-face-hnl'><Link to="/tournois" className='link'>tournois</Link></Navbar.Brand>
-                                <Navbar.Brand as="button" className='text-uppercase font-face-hnl fs-3 margin-right margin-left font-face-hnl'><Link to="/faq" className='link'>faq</Link></Navbar.Brand>
+                                <Navbar.Brand className='text-uppercase font-face-hnl fs-3 margin-right margin-left font-face-hnl' href="#">accueil</Navbar.Brand>
+                                <Navbar.Brand className='text-uppercase font-face-hnl fs-3 margin-right margin-left font-face-hnl'><Link to="/commander-sa-carte" className='link'>carte</Link></Navbar.Brand>
+                                <Navbar.Brand className='text-uppercase font-face-hnl fs-3 margin-right margin-left font-face-hnl'><Link to="/tournois" className='link'>tournois</Link></Navbar.Brand>
+                                <Navbar.Brand className='text-uppercase font-face-hnl fs-3 margin-right margin-left font-face-hnl'><Link to="/faq" className='link'>faq</Link></Navbar.Brand>
                             </Nav>
                         </Container>
                         <Nav>
