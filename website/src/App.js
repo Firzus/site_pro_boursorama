@@ -4,8 +4,6 @@ import Home from "./pages/Home";
 import NotFound from './pages/NotFound';
 import CustomerArea from './pages/CustomerArea';
 import OrderCard from './pages/OrderCard';
-import Tournois from './pages/Tournois';
-import Faq from './pages/Faq';
 
 class App extends Component {
 
@@ -57,10 +55,8 @@ class App extends Component {
       <BrowserRouter>
         <Routes>
           <Route path="/" exact element={<Home />} />
-          <Route path="/tournois" exact element={<Tournois />} />
           <Route path="/commander-sa-carte" exact element={<OrderCard />} />
           <Route path="/espace-client" exact element={<CustomerArea />} />
-          <Route path="/Faq" exact element={<Faq />} />
           <Route path='*' element={<NotFound />} />
         </Routes>
       </BrowserRouter>
