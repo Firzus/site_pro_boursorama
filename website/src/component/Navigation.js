@@ -23,10 +23,10 @@ class Navigation extends Component {
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Container className='d-flex justify-content-evenly'>
                             <Nav>
-                                <Navbar.Brand className='fw-bold text-uppercase font-face-hnl fs-2 margin-right margin-left font-face-hnl' href='#'><Link to="/" className='link'>acceuil</Link></Navbar.Brand>
+                                <Navbar.Brand className='fw-bold text-uppercase font-face-hnl fs-2 margin-right margin-left font-face-hnl' href='/#'>acceuil</Navbar.Brand>
                                 <Navbar.Brand className='fw-bold text-uppercase font-face-hnl fs-2 margin-right margin-left font-face-hnl'><Link to="/commander-sa-carte" className='link'>carte</Link></Navbar.Brand>
-                                <Navbar.Brand className='fw-bold text-uppercase font-face-hnl fs-2 margin-right margin-left font-face-hnl'><Link to="/tournois" className='link'>tournois</Link></Navbar.Brand>
-                                <Navbar.Brand className='fw-bold text-uppercase font-face-hnl fs-2 margin-right margin-left font-face-hnl'><Link to="/faq" className='link'>faq</Link></Navbar.Brand>
+                                <Navbar.Brand className='fw-bold text-uppercase font-face-hnl fs-2 margin-right margin-left font-face-hnl' href='/#tournois'>tournois</Navbar.Brand>
+                                <Navbar.Brand className='fw-bold text-uppercase font-face-hnl fs-2 margin-right margin-left font-face-hnl' href='/#faq'>faq</Navbar.Brand>
                             </Nav>
                         </Container>
                         <Nav>

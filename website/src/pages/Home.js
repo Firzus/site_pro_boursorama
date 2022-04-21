@@ -99,7 +99,7 @@ class Home extends Component {
                         </Col>
                     </Row>
 
-                    <Row className="background-part pt-4 pb-4 side-container">
+                    <Row className="background-part pt-4 pb-4 side-container" id="tournois">
                         <Col className="d-flex flex-column">
                             <Row className="pt-3 pb-1 mb-auto">
                                 <Col className="font-face-hnl fs-1 text-center fw-bold">
@@ -121,7 +121,7 @@ class Home extends Component {
                             </Row>
                             <Row className="pt-2 pb-3 mt-auto">
                                 <Col className="d-flex justify-content-center">
-                                    <Button variant="info" size="lg" className='fw-bold text-center text-uppercase font-face-hnl text-white'>
+                                    <Button href="https://organizer.toornament.com/tournaments/5614200892996059136" target="_blank" variant="info" size="lg" className='fw-bold text-center text-uppercase font-face-hnl text-white'>
                                         Participer sur toornament.com
                                     </Button>{''}
                                 </Col>
@@ -129,7 +129,7 @@ class Home extends Component {
                         </Col>
                     </Row>
 
-                    <Row className="pt-4 pb-4 side-container-2">
+                    <Row className="pt-4 pb-4 side-container-2" id="faq">
                         <Col className="d-flex flex-column">
                             <Row className="pt-3 pb-1 mb-auto">
                                 <Col className="font-face-hnl fs-1 text-center fw-bold">
