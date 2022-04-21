@@ -5,7 +5,7 @@ import NotFound from './pages/NotFound';
 import CustomerArea from './pages/CustomerArea';
 import OrderCard from './pages/OrderCard';
 import Tournois from './pages/Tournois';
-import Faq from './pages/Faq';
+import Faq from './pages/FAQ';
 
 class App extends Component {
 
@@ -16,7 +16,7 @@ class App extends Component {
   }
 
   async componentDidMount() {
-    const response = await fetch('http://localhost:1337/api/articles?populate=*', { method: 'GET', headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' } })
+    const response = await fetch('http://localhost:1337/api/Client?populate=*', { method: 'GET', headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' } })
     const articles = await response.json()
     this.setState({
       articles: articles
