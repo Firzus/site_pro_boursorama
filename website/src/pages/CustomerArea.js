@@ -22,14 +22,14 @@ class CustomerArea extends Component {
                 <Navigation/>
                 <Container className="pt-5 pb-2">
                     <Row className="pt-4 pb-4">
-                        <Col className="">
-                            <h2>TU VEUX CREER UN COMPTE, C’EST PAR ICI !</h2>
+                        <Col className="text-uppercase fs-1 fw-bold font-face-hnl">
+                            tu veux créer un compte, c'est par ici !
                         </Col>
                     </Row>
                     <FormA/>
                     <Row s={1}>
                         <Col className=""></Col>
-                        <Col className="fs2 text-uppercase">
+                        <Col className="fs-2 fw-bold text-uppercase font-face-hnl">
                             tu as déja un compte! connecte toi!
                         </Col>
                         <Col s={1}></Col>
