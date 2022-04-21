@@ -20,9 +20,9 @@ class CustomerArea extends Component {
         return (
             <div className="background">
                 <Navigation/>
-                <Container className="pt-5 pb-2">
+                <Container fluid className="h-100 pt-5 pb-2">
                     <Row className="pt-4 pb-4">
-                        <Col className="text-uppercase fs-1 fw-bold font-face-hnl">
+                        <Col className="text-center text-uppercase fs-1 fw-bold font-face-hnl">
                             tu veux créer un compte, c'est par ici !
                         </Col>
                     </Row>
@@ -34,8 +34,8 @@ class CustomerArea extends Component {
                         </Col>
                         <Col s={1}></Col>
                     </Row>
+                    <FormB/>
                 </Container>
-                <FormB/>
                 <Footer />
             </div>
         )
