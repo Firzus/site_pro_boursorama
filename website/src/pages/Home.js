@@ -16,11 +16,13 @@ class Home extends Component {
         return (
             <div className="home background">
                 <Navigation />
-                <Container className="pt-5 pb-2">
-                    <Row className="pt-4 pb-4">
+
+                <Container fluid className="pt-5 pb-2">
+
+                    <Row className="pt-4 pb-4 w-100 side-container">
                         <Col>
                             <Row className="pt-2 pb-1">
-                                <Col className="fs-1 font-face-hnl text-center text-uppercase">
+                                <Col className="fs-1 font-face-hnl text-center text-uppercase fw-bold">
                                     la lfl s'allie avec boursorama !
                                 </Col>
                             </Row>
@@ -32,17 +34,21 @@ class Home extends Component {
                             </Row>
                             <Row className="pt-2 d-flex justify-content-center">
                                 <ReactPlayer
+<<<<<<< HEAD
                                     url="https://www.twitch.tv/amouranth"
+=======
+                                    url="https://www.twitch.tv/sharonqueen"
+>>>>>>> 36adc75acab8b7c44f92c895c2f5e3a3d17f0422
                                     controls
                                 />
                             </Row>
                         </Col>
                     </Row>
 
-                    <Row className="pt-4 pb-4 d-flex justify-content-center">
+                    <Row className="background-part pt-4 pb-4 d-flex justify-content-center side-container">
                         <Col xs={8} className="d-flex flex-column">
                             <Row className="pt-4 pb-1">
-                                <Col className="font-face-hnl fs-3 text-center text-uppercase">
+                                <Col className="font-face-hnl fs-3 text-center text-uppercase fw-bold">
                                     la carte boursorama banque à ton effigie !
                                 </Col>
                             </Row>
@@ -55,9 +61,9 @@ class Home extends Component {
                             </Row>
                             <Row className="pt-1 pb-1 mt-auto">
                                 <Col className="d-flex justify-content-center">
-                                    <Button variant="secondary" className='text-center text-uppercase font-face-hnl'>
+                                    <Button variant="outline-dark" className='fw-bold text-center text-uppercase font-face-hnl text-dark color-button'>
                                         commande ta carte
-                                    </Button>{' '}
+                                    </Button>
                                 </Col>
                             </Row>
                         </Col>
@@ -71,10 +77,10 @@ class Home extends Component {
                         </Col>
                     </Row>
 
-                    <Row className="pt-4 pb-4">
+                    <Row className="pt-4 pb-4 side-container-2">
                         <Col className="d-flex flex-column">
                             <Row className="pt-3 pb-1 mb-auto">
-                                <Col className="font-face-hnl fs-1 text-center text-uppercase">
+                                <Col className="font-face-hnl fs-1 text-center text-uppercase fw-bold">
                                     ouvre ton compte gratuitement et gagne 20€ !
                                 </Col>
                             </Row>
@@ -89,7 +95,7 @@ class Home extends Component {
                             </Row>
                             <Row className="pt-2 pb-3 mt-auto">
                                 <Col className="d-flex justify-content-center">
-                                    <Button variant="secondary" size="lg" className='text-center text-uppercase font-face-hnl'>
+                                    <Button variant="outline-dark" size="lg" className='fw-bold text-center text-uppercase font-face-hnl text-dark color-button'>
                                         j'ouvre mon compte
                                     </Button>{' '}
                                 </Col>
@@ -97,10 +103,10 @@ class Home extends Component {
                         </Col>
                     </Row>
 
-                    <Row className="pt-4 pb-4">
+                    <Row className="background-part pt-4 pb-4 side-container">
                         <Col className="d-flex flex-column">
                             <Row className="pt-3 pb-1 mb-auto">
-                                <Col className="font-face-hnl fs-1 text-center">
+                                <Col className="font-face-hnl fs-1 text-center fw-bold">
                                     Participe aux tournois amateurs sponsorisés Boursorama Esport !
                                 </Col>
                             </Row>
@@ -119,7 +125,7 @@ class Home extends Component {
                             </Row>
                             <Row className="pt-2 pb-3 mt-auto">
                                 <Col className="d-flex justify-content-center">
-                                    <Button variant="secondary" size="lg" className='text-center text-uppercase font-face-hnl'>
+                                    <Button variant="info" size="lg" className='fw-bold text-center text-uppercase font-face-hnl text-white'>
                                         Participer sur toornament.com
                                     </Button>{' '}
                                 </Col>
@@ -127,10 +133,10 @@ class Home extends Component {
                         </Col>
                     </Row>
 
-                    <Row className="pt-4 pb-4">
+                    <Row className="pt-4 pb-4 side-container-2">
                         <Col className="d-flex flex-column">
                             <Row className="pt-3 pb-1 mb-auto">
-                                <Col className="font-face-hnl fs-1 text-center">
+                                <Col className="font-face-hnl fs-1 text-center fw-bold">
                                     Vos questions que vous nous posez souvent (très, très souvent !)
                                 </Col>
                             </Row>
@@ -201,7 +207,29 @@ class Home extends Component {
                         </Col>
                     </Row>
 
+                    <img
+                        src="/img/decoration_1.png"
+                        alt="Décoration"
+                        className="position-absolute position-deco_1"
+                    />
+                    <img
+                        src="/img/decoration_2.png"
+                        alt="Décoration"
+                        className="position-absolute position-deco_2"
+                    />
+                    <img
+                        src="/img/decoration_3.png"
+                        alt="Décoration"
+                        className="position-absolute position-deco_3"
+                    />
+                    <img
+                        src="/img/decoration_4.png"
+                        alt="Décoration"
+                        className="position-absolute position-deco_4"
+                    />
+
                 </Container>
+
                 <Footer />
             </div>
         )
