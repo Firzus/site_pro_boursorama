@@ -15,11 +15,11 @@
 }
 
 .margin-left {
-    margin-left: 1em;
+    margin-left: 2em;
 }
 
 .margin-right {
-    margin-right: 1em;
+    margin-right: 2em;
 }
 
 .background {
@@ -76,4 +76,20 @@
     width: auto;
     top: 82em;
     left: 0;
+}
+
+.decal-l {
+    padding-left: 40%;
+}
+
+.decal-r {
+    padding-right: 40%;
+}
+
+.decal-l-2 {
+    padding-left: 60%;
+}
+
+.decal-r-2 {
+    padding-right: 60%;
 }
