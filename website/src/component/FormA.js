@@ -1,108 +1,175 @@
 //import React from 'react';
 import React, { useState } from "react";
-import { Form, Col, Row, Button } from 'react-bootstrap';
+import { Form, Col, Row, Button, Container } from 'react-bootstrap';
 
 function FormA() {
-    const [validated, setValidated] = useState(false);
-  
-    const handleSubmit = (event) => {
-      const form = event.currentTarget;
-      if (form.checkValidity() === false) {
-        event.preventDefault();
-        event.stopPropagation();
-      }
-  
-      setValidated(true);
-    };
-    
-    return (
-      <div className="FormA">
-        <Form noValidate validated={validated} onSubmit={handleSubmit}>
+  const [validated, setValidated] = useState(false);
 
-          <Row className="mb-4">
-            <Col className="s-2"></Col>
-            <Form.Group as={Col} md="3" controlId="validationCustom01">
-              <Form.Label>Prénom</Form.Label>
-              <Form.Control
-                required
-                type="text"
-                placeholder="Prénom"
-              />
-              <Form.Control.Feedback type="invalid"></Form.Control.Feedback>
-            </Form.Group>
+  const handleSubmit = (event) => {
+    event.preventDefault()
+    let Data = {
+      Prenom: event.target[0].value,
+      Nom: event.target[1].value,
+      Email: event.target[2].value,
+      Birthday: event.target[3].value,
+      Adresse_Postale: event.target[4].value,
+      Newsletter: { id: 'register07' }
+    }
+    console.log(Data.Prenom);
+    console.log(Data.Nom);
+    console.log(Data.Email);
+    console.log(Data.Birthday);
+    console.log(Data.Adresse_Postale);
+    console.log(Data.Newsletter);
+    const form = event.currentTarget;
+    if (form.checkValidity() === false) {
+      event.preventDefault();
+      event.stopPropagation();
+    }
 
-            <Form.Group as={Col} md="3" controlId="validationCustom02">
-              <Form.Label>Nom</Form.Label>
-              <Form.Control
-                required
-                type="text"
-                placeholder="Nom"
-              />
-              <Form.Control.Feedback type="invalid"></Form.Control.Feedback>
-            </Form.Group>
-            <Col className="s-2"></Col>
-          </Row>
+    setValidated(true);
+    fetch(" http://localhost:1337/api/Client", {
+      method: "POST",
+      headers: {
+        'Content-Type': 'text/html',
+        'charset': 'UTF-8'
+      },
+      body: JSON.stringify(Data)
+    });
+    console.log()
+  };
 
-          <Row className="mb-4">
+  return (
+    <>
+      <Container className="d-flex justify-content-center">
+        <Form noValidate validated={validated} onSubmit={handleSubmit} >
+          <Row>
 
-            <Col className="s-2"></Col>
-            <Form.Group as={Col} md="3" controlId="validationCustom03">
-              <Form.Label>Email</Form.Label>
-              <Form.Control 
-                type="text" 
-                placeholder="Email" 
-                required 
-              />
-              <Form.Control.Feedback type="invalid"></Form.Control.Feedback>
-            </Form.Group>
+            <Col className="pt-1 pb-1">
 
-            <Form.Group as={Col} md="3" controlId="validationCustom04">
-              <Form.Label>Date de Naissance</Form.Label>
-              <Form.Control 
-              type="text" 
-              placeholder="Date de naissance" 
-              required />
-              <Form.Control.Feedback type="invalid"></Form.Control.Feedback>
-            </Form.Group>
-            <Col className="s-2"></Col>
+              <Row className="pt-1 pb-1 side-container">
+                <Col>
+                  <Form.Group controlId="register02">
+                    <Form.Label>Nom</Form.Label>
+                    <Form.Control
+                      required
+                      type="text"
+                      placeholder="Nom"
+                      name='Nom'
+                    />
+                    <Form.Control.Feedback type="invalid"></Form.Control.Feedback>
+                  </Form.Group>
+                </Col>
+              </Row>
 
-          </Row>
-          <Row className="mb-4">
-            <Col className="s-2"></Col>
-            <Form.Group as={Col} md="3" controlId="validationCustom05">
-              <Form.Label>Adresse Postale</Form.Label>
-              <Form.Control 
-              type="text" 
-              placeholder="Adresse Postale" 
-              required />
-              <Form.Control.Feedback type="invalid"></Form.Control.Feedback>
-            </Form.Group>
+              <Row className="pt-1 pb-1 side-container">
+                <Col>
+                  <Form.Group controlId="register04">
+                    <Form.Label>Date de Naissance (JJ/MM/AAAA)</Form.Label>
+                    <Form.Control
+                      type="text"
+                      placeholder="Date de Naissance (JJ/MM/AAAA)"
+                      required
+                      name='Birthday'
+                    />
+                    <Form.Control.Feedback type="invalid"></Form.Control.Feedback>
+                  </Form.Group>
+                </Col>
+              </Row>
 
-            <Col>
-              <Form.Group className="mb-3">
-                <Form.Check
-                  required
-                  label="Agree to terms and conditions"
-                  feedback="You must agree before submitting."
-                  feedbackType="invalid"
-                  />
-              </Form.Group>
-              <Form.Group className="mb-3">
-                <Form.Check
-                  label="Do you want to subscribe to our newletter?"
-                  />
-              </Form.Group>
+              <Row className="pt-1 pb-1 side-container">
+                <Col>
+                  <Form.Group controlId="register05">
+                    <Form.Label>Adresse Postale</Form.Label>
+                    <Form.Control
+                      type="text"
+                      placeholder="Adresse Postale"
+                      required
+                      name='Adresse_Postale'
+                    />
+                    <Form.Control.Feedback type="invalid"></Form.Control.Feedback>
+                  </Form.Group>
+                </Col>
+              </Row>
+
+              <Row className="pt-4 pb-4">
+                <Col className="d-flex justify-content-end">
+                  <Button
+                    variant="outline-dark"
+                    type="submit"
+                    className="fw-bold fs-2 text-center text-uppercase font-face-hnl text-dark color-button">
+                    s'inscrire
+                  </Button>
+                </Col>
+              </Row>
+
             </Col>
-            <Col className="s-2"></Col>
-          </Row>
-          <Row className="mb-4">
-            <Col className="s-5"></Col>
-            <Button as={Col} md="1" type="submit">Submit form</Button>
-            <Col className="s-5"></Col>
+
+            <Col className="pt-1 pb-1">
+
+              <Row className="pt-1 pb-1 side-container">
+                <Col>
+                  <Form.Group controlId="register01">
+                    <Form.Label>Prénom</Form.Label>
+                    <Form.Control
+                      required
+                      name='Prenom'
+                      type="text"
+                      placeholder="Prénom"
+                    />
+                    <Form.Control.Feedback type="invalid"></Form.Control.Feedback>
+                  </Form.Group>
+                </Col>
+              </Row>
+
+              <Row className="pt-1 pb-1 side-container">
+                <Col>
+                  <Form.Group controlId="register03">
+                    <Form.Label>Adresse mail</Form.Label>
+                    <Form.Control
+                      type="text"
+                      placeholder="Adresse mail"
+                      name='Email'
+                      required
+                    />
+                    <Form.Control.Feedback type="invalid"></Form.Control.Feedback>
+                  </Form.Group>
+                </Col>
+              </Row>
+
+              <Row className="pt-3 pb-2 side-container">
+                <Col>
+                  <Form.Group>
+                    <Form.Check
+                      required
+                      label="J'accepte le Règlement de Boursorama Banque."
+                      feedback="Vous devez accepter les conditions avant de pouvoir continuer."
+                      feedbackType="invalid"
+                    />
+                  </Form.Group>
+                </Col>
+              </Row>
+
+              <Row className="pt-2 pb-1 side-container">
+                <Col>
+                  <Form.Group controlId="register07">
+                    <Form.Check
+                      label="Je souhaite recevoir des offres promotionnelles (newsletter) de Boursorama Banque."
+                      name='Newsletter'
+                      type='checkbox'
+                    />
+                  </Form.Group>
+                </Col>
+              </Row>
+
+            </Col>
+
           </Row>
         </Form>
-      </div>
-    ); 
-  }
+      </Container>
+
+    </>
+  );
+}
 
 export default FormA;

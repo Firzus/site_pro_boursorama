@@ -1,62 +1,78 @@
 //import React from 'react';
 import React, { useState } from "react";
-import { Form, Col, Row, Button } from 'react-bootstrap';
+import { Form, Col, Row, Button, Container } from 'react-bootstrap';
 
 function FormB() {
-    const [validated, setValidated] = useState(false);
-  
-    const handleSubmit = (event) => {
-      const form = event.currentTarget;
-      if (form.checkValidity() === false) {
-        event.preventDefault();
-        event.stopPropagation();
-      }
-  
-      setValidated(true);
-    };
-    
-    return (
-      <Form noValidate validated={validated} onSubmit={handleSubmit}>
-        <Row className="mb-4">
-          <Col className="s-2"></Col>
-          <Form.Group as={Col} md="3" controlId="validationCustom01">
-            <Form.Label>Email</Form.Label>
-            <Form.Control
-              required
-              type="text"
-              placeholder="Email"
-            />
-            <Form.Control.Feedback type="invalid"></Form.Control.Feedback>
-          </Form.Group>
+  const [validated, setValidated] = useState(false);
 
-          <Form.Group as={Col} md="3" controlId="validationCustom02">
-            <Form.Label>Mot de passe</Form.Label>
-            <Form.Control
-              required
-              type="password"
-              placeholder="Mot de Passe"
-            />
-            <Form.Control.Feedback type="invalid"></Form.Control.Feedback>
-          </Form.Group>
-          <Col className="s-2"></Col>
+  const handleSubmit = (event) => {
+    const form = event.currentTarget;
+    if (form.checkValidity() === false) {
+      event.preventDefault();
+      event.stopPropagation();
+    }
 
-        </Row>
-        <Row className="mb-4">
-          <Col className="s-5"></Col>
-          <Form.Group as={Col} md="1" className="mb-3">
-                <Form.Check
-                label="Remember me."
+    setValidated(true);
+  };
+
+  return (
+    <>
+      <Container className="d-flex justify-content-center pb-3">
+        <Form noValidate validated={validated} onSubmit={handleSubmit}>
+
+          <Row>
+
+            <Col>
+              <Form.Group controlId="validationCustom01">
+                <Form.Label>Adresse mail</Form.Label>
+                <Form.Control
+                  required
+                  type="text"
+                  placeholder="Adresse mail"
                 />
-            </Form.Group>
-          <Col className="s-5"></Col>
-        </Row>
-        <Row className="mb-4">
-          <Col className="s-5"></Col>
-            <Button as={Col} md="1" type="submit">Submit form</Button>
-          <Col className="s-5"></Col>
-        </Row>
-      </Form>
-    ); 
-  }
+                <Form.Control.Feedback type="invalid"></Form.Control.Feedback>
+              </Form.Group>
+            </Col>
+
+            <Col>
+              <Form.Group controlId="validationCustom02">
+                <Form.Label>Mot de passe</Form.Label>
+                <Form.Control
+                  required
+                  type="password"
+                  placeholder="Mot de Passe"
+                />
+                <Form.Control.Feedback type="invalid"></Form.Control.Feedback>
+              </Form.Group>
+            </Col>
+
+          </Row>
+
+          <Row className="pt-2 pb-2">
+            <Col className="d-flex justify-content-center">
+              <Form.Group>
+                <Form.Check
+                  label="Se souvenir de moi."
+                />
+              </Form.Group>
+            </Col>
+          </Row>
+
+          <Row className="pt-2 pb-2">
+            <Col className="d-flex justify-content-center">
+              <Button
+                variant="outline-dark"
+                type="submit"
+                className="fw-bold fs-2 text-center text-uppercase font-face-hnl text-dark color-button">
+                connexion
+              </Button>
+            </Col>
+          </Row>
+
+        </Form>
+      </Container>
+    </>
+  );
+}
 
 export default FormB;

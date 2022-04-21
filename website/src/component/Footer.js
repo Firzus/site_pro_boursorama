@@ -6,7 +6,7 @@ class Footer extends Component {
     render() {
         return (
             <>
-                <Navbar bg="black">
+                <Navbar h-20 bg="black">
                         <Navbar.Brand>
                             <img
                                 src="/img/logo_boursorama_black.png"

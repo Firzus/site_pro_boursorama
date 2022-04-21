@@ -1,8 +1,8 @@
-/* @media only screen and (max-width: 600px) {
-    img {
-      width: 10%;
+@media only screen and (max-width: 1780px) {
+    .img-hidden {
+      visibility: hidden;
     }
-  } */
+  }
 
 @font-face {
     font-family: "HelveticaNeueLight";
@@ -15,11 +15,11 @@
 }
 
 .margin-left {
-    margin-left: 1em;
+    margin-left: 2em;
 }
 
 .margin-right {
-    margin-right: 1em;
+    margin-right: 2em;
 }
 
 .background {
@@ -45,13 +45,13 @@
 }
 
 .side-container {
-    padding-left: 10em;
-    padding-right: 10em;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 .side-container-2 {
-    padding-left: 20em;
-    padding-right: 20em;
+    padding-left: 20%;
+    padding-right: 20%;
 }
 
 .position-deco_1 {
@@ -76,4 +76,20 @@
     width: auto;
     top: 82em;
     left: 0;
+}
+
+.decal-l {
+    padding-left: 40%;
+}
+
+.decal-r {
+    padding-right: 40%;
+}
+
+.decal-l-2 {
+    padding-left: 60%;
+}
+
+.decal-r-2 {
+    padding-right: 60%;
 }
