@@ -34,11 +34,7 @@ class Home extends Component {
                             </Row>
                             <Row className="pt-2 d-flex justify-content-center">
                                 <ReactPlayer
-<<<<<<< HEAD
                                     url="https://www.twitch.tv/amouranth"
-=======
-                                    url="https://www.twitch.tv/sharonqueen"
->>>>>>> 36adc75acab8b7c44f92c895c2f5e3a3d17f0422
                                     controls
                                 />
                             </Row>
@@ -127,7 +123,7 @@ class Home extends Component {
                                 <Col className="d-flex justify-content-center">
                                     <Button variant="info" size="lg" className='fw-bold text-center text-uppercase font-face-hnl text-white'>
                                         Participer sur toornament.com
-                                    </Button>{' '}
+                                    </Button>{''}
                                 </Col>
                             </Row>
                         </Col>
