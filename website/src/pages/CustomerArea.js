@@ -4,9 +4,6 @@ import FormA from '../component/FormA';
 import FormB from '../component/FormB';
 import { Component } from "react";
 import { Col, Row, Container } from 'react-bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import '../css/style.css';
-import '../fonts/Helvetica/Helvetica-Neue-Light.ttf';
 
 class CustomerArea extends Component {
 
@@ -50,7 +47,7 @@ class CustomerArea extends Component {
 
                 </Container>
 
-                <Footer />
+                <Footer/>
             </div>
         )
     }

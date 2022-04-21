@@ -14,7 +14,7 @@ class Home extends Component {
 
     render() {
         return (
-            <div className="home background">
+            <div className="background">
                 <Navigation />
 
                 <Container fluid className="pt-5 pb-2">

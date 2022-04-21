@@ -1,7 +1,8 @@
 import { Component } from "react";
 import Navigation from "../component/Navigation";
-import { Button, Col, Container, Row } from "react-bootstrap";
-import FormA from '../component/FormA';
+import { Carousel, Col, Container, Row } from "react-bootstrap";
+import FormC from "../component/FormC";
+import Footer from "../component/Footer";
 
 class OrderCards extends Component {
 
@@ -13,63 +14,78 @@ class OrderCards extends Component {
 
     render() {
         return (
-            <div className="home background" >
-                <Navigation/>
+            <div className="background" >
+                <Navigation />
 
                 <Container fluid className="pt-5 pb-2">
 
-                    <Row className="pt-4 pb-4 w-100 side-container">
-                        <Col>
-                            <Row className="pt-2 pb-1">
-                                <Col className="fs-1 font-face-hnl text-center text-uppercase fw-bold">
-                                    La carte boursorama <br/>
-                                    banque a ton effigie !
-                                </Col>
-                            </Row>
-                            <Row className="pt-2 d-flex justify-content-center">
-                                <Col className="pt-3 d-flex justify-content-center">
-                                    <img
-                                        src="/img/credit_card.png"
-                                        width="403"
-                                        height="254"
-                                        alt="Carte de crédit"
-                                    />
-                                </Col>
-                            </Row>
-                            <Row className="pt-1 pb-1">
-                                <Col className="font-face-hnl fs-5 text-center">
-                                    Choisis parmis ces 4 design uniques et exclusifs de cartes pour te distinguer ! <br/>
-                                    Cette carte est vendue a 10 000 exemplaires seulement, alors ne tarde pas.
-                                </Col>
-                            </Row>
-                            <Row className="pt-1 pb-1">
-                                <Col className="font-face-hnl fs-5 text-center">
-                                    Tu es nouveau client ? La carte est offerte avec l'ouverture <br/>
-                                    d'un compte Boursorama Banque :
-                                </Col>
-                            </Row>
-                            <FormA/>
+                    <Row className="pt-5 pb-1">
+                        <Col className="fs-2 font-face-hnl text-center text-uppercase fw-bold d-flex justify-content-center">
+                            La carte boursorama banque a ton effigie !
                         </Col>
                     </Row>
 
-                    <Row className="background-part pt-4 pb-4 d-flex justify-content-center side-container">
-                        <Col>
-                            <Row className="pt-1 pb-1">
-                                <Col className="font-face-hnl fs-5 text-center">
-                                    Tu es déjà client Boursorama Banque ? Connecte toi à ton <br/>
-                                    compte et laisse toi guider !
-                                </Col>
-                            </Row>
-                            <Button
-                                href='#home'
-                                className='fw-bold font-face-hnl text-uppercase fs-3 d-flex justify-content-center text-dark color-button'
-                                variant="outline-dark">
-                                Connexion
-                            </Button>
+                    <Row className="pt-1 pb-3 side-container-2">
+                        <Col className="fs-4 font-face-hnl text-center">
+                            La carte Collection League of Legends permet
+                            la participation aux tirages au sort pour les
+                            clients afin de vivre l'esport au plus près de
+                            l'action et d'échanger avec les meilleurs joueurs.
+                        </Col>
+                    </Row>
+
+                    <Row className="pt-3 pb-1">
+                        <Col className="fs-2 font-face-hnl text-center fw-bold d-flex justify-content-center">
+                            1. Choisis ton design de carte
+                        </Col>
+                    </Row>
+
+                    <Row className="pt-1 pb-2">
+                        <Col className="w-25 d-flex justify-content-center">
+                            <Carousel fade controls={false}>
+                                <Carousel.Item>
+                                    <img
+                                        className="d-block w-100"
+                                        src="/img/credit_card.png"
+                                        alt="First slide"
+                                    />
+                                </Carousel.Item>
+                                <Carousel.Item>
+                                    <img
+                                        className="d-block w-100"
+                                        src="/img/credit_card.png"
+                                        alt="Second slide"
+                                    />
+                                </Carousel.Item>
+                                <Carousel.Item>
+                                    <img
+                                        className="d-block w-100"
+                                        src="/img/credit_card.png"
+                                        alt="Third slide"
+                                    />
+                                </Carousel.Item>
+                            </Carousel>
+                        </Col>
+                    </Row>
+
+                    <Row className="pt-2 pb-1">
+                        <Col className="fs-2 font-face-hnl text-center fw-bold d-flex justify-content-center">
+                            2. Remplis le formulaire d’inscription
+                        </Col>
+                    </Row>
+
+                    <FormC />
+
+                    <Row className="pt-1 pb-5 side-container-2 d-flex justify-content-center">
+                        <Col className="fs-3 font-face-hnl text-center">
+                            Tu vas recevoir par mail la dernière étape pour
+                            commander ta carte, qui arrivera chez toi sous
+                            24 à 48 heures !
                         </Col>
                     </Row>
 
                 </Container>
+                <Footer/>
             </div>
         )
     }
