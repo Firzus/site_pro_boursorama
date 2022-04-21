@@ -206,22 +206,22 @@ class Home extends Component {
                     <img
                         src="/img/decoration_1.png"
                         alt="Décoration"
-                        className="position-absolute position-deco_1"
+                        className="img-hidden position-absolute position-deco_1"
                     />
                     <img
                         src="/img/decoration_2.png"
                         alt="Décoration"
-                        className="position-absolute position-deco_2"
+                        className="img-hidden position-absolute position-deco_2"
                     />
                     <img
                         src="/img/decoration_3.png"
                         alt="Décoration"
-                        className="position-absolute position-deco_3"
+                        className="img-hidden position-absolute position-deco_3"
                     />
                     <img
                         src="/img/decoration_4.png"
                         alt="Décoration"
-                        className="position-absolute position-deco_4"
+                        className="img-hidden position-absolute position-deco_4"
                     />
 
                 </Container>
