@@ -1,6 +1,6 @@
 import { Component } from "react";
 import Navigation from "../component/Navigation";
-import { Accordion, Button, Col, Container, Row } from "react-bootstrap";
+import { Button, Col, Container, Row } from "react-bootstrap";
 import FormA from '../component/FormA';
 
 class OrderCards extends Component {

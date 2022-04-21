@@ -19,7 +19,8 @@ class CustomerArea extends Component {
     render() {
         return (
             <div className="background">
-                <Navigation />
+                <Navigation/>
+
                 <Container fluid className="pt-5 pb-2">
                     <Row className="pt-5 pb-1">
                         <Col className="text-center text-uppercase fs-2 fw-bold font-face-hnl">
@@ -40,7 +41,15 @@ class CustomerArea extends Component {
                         </Row>
                     </Container>
                     <FormB />
+
+                    <img
+                        src="/img/decoration_5.png"
+                        alt="Décoration"
+                        className="img-hidden position-absolute position-deco_5"
+                    />
+
                 </Container>
+
                 <Footer />
             </div>
         )

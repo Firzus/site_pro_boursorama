@@ -78,18 +78,9 @@
     left: 0;
 }
 
-.decal-l {
-    padding-left: 40%;
-}
-
-.decal-r {
-    padding-right: 40%;
-}
-
-.decal-l-2 {
-    padding-left: 60%;
-}
-
-.decal-r-2 {
-    padding-right: 60%;
+.position-deco_5 {
+    width: auto;
+    bottom: 6em;
+    left: 0;
+    z-index: 999;
 }
