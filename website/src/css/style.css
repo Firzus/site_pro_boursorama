@@ -1,8 +1,8 @@
-/* @media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1780px) {
     img {
-      width: 10%;
+      visibility: hidden;
     }
-  } */
+  }
 
 @font-face {
     font-family: "HelveticaNeueLight";
