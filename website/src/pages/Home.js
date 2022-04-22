@@ -65,7 +65,7 @@ class Home extends Component {
                         </Col>
                         <Col className="pt-3 d-flex justify-content-center">
                             <img
-                                src="/img/credit_card.png"
+                                src="http://localhost:1337/uploads/credit_card_221539a838.png?updated_at=2022-04-21T23:52:10.666Z"
                                 width="403"
                                 height="254"
                                 alt="Carte de crédit"
@@ -204,22 +204,22 @@ class Home extends Component {
                     </Row>
 
                     <img
-                        src="/img/decoration_1.png"
+                        src="http://localhost:1337/uploads/decoration_1_ed989941b5.png?updated_at=2022-04-21T23:52:10.693Z"
                         alt="Décoration"
                         className="img-hidden position-absolute position-deco_1"
                     />
                     <img
-                        src="/img/decoration_2.png"
+                        src="http://localhost:1337/uploads/decoration_2_3ac520df1b.png?updated_at=2022-04-21T23:52:10.801Z"
                         alt="Décoration"
                         className="img-hidden position-absolute position-deco_2"
                     />
                     <img
-                        src="/img/decoration_3.png"
+                        src="http://localhost:1337/uploads/decoration_3_0eb30f376b.png?updated_at=2022-04-21T23:52:10.936Z"
                         alt="Décoration"
                         className="img-hidden position-absolute position-deco_3"
                     />
                     <img
-                        src="/img/decoration_4.png"
+                        src="http://localhost:1337/uploads/decoration_4_19f0af5363.png?updated_at=2022-04-21T23:52:10.705Z"
                         alt="Décoration"
                         className="img-hidden position-absolute position-deco_4"
                     />

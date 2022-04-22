@@ -15,7 +15,7 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::client.client",
-      "inversedBy": "commande"
+      "mappedBy": "commande"
     },
     "carte": {
       "type": "relation",

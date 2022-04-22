@@ -12,7 +12,7 @@ class Navigation extends Component {
                 <Navbar collapseOnSelect expand="lg" bg="white" fixed="top">
                     <Navbar.Brand href="#">
                         <img
-                            src="/img/logo_boursorama_color.png"
+                            src="http://localhost:1337/uploads/logo_boursorama_color_8d5881b814.png?updated_at=2022-04-21T23:52:10.818Z"
                             width="175"
                             height="36"
                             className="d-inline-block align-top margin-left"
@@ -35,7 +35,11 @@ class Navigation extends Component {
                                     href='#home'
                                     className='fw-bold font-face-hnl text-uppercase fs-2 d-flex justify-content-center text-dark color-button'
                                     variant="outline-dark">
-                                    espace client
+                                    <Link
+                                        to="/espace-client"
+                                        className='link'>
+                                        espace client
+                                    </Link>
                                 </Button>
                             </Container>
                         </Nav>

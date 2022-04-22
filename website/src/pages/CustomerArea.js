@@ -40,7 +40,7 @@ class CustomerArea extends Component {
                     <FormB />
 
                     <img
-                        src="/img/decoration_5.png"
+                        src="http://localhost:1337/uploads/decoration_5_81116eff64.png?updated_at=2022-04-21T23:52:10.879Z"
                         alt="Décoration"
                         className="img-hidden position-absolute position-deco_5"
                     />

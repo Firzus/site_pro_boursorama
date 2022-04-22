@@ -46,21 +46,21 @@ class OrderCards extends Component {
                                 <Carousel.Item>
                                     <img
                                         className="d-block w-100"
-                                        src="/img/credit_card.png"
+                                        src="http://localhost:1337/uploads/credit_card_221539a838.png?updated_at=2022-04-21T23:52:10.666Z"
                                         alt="First slide"
                                     />
                                 </Carousel.Item>
                                 <Carousel.Item>
                                     <img
                                         className="d-block w-100"
-                                        src="/img/credit_card.png"
+                                        src="http://localhost:1337/uploads/credit_card_221539a838.png?updated_at=2022-04-21T23:52:10.666Z"
                                         alt="Second slide"
                                     />
                                 </Carousel.Item>
                                 <Carousel.Item>
                                     <img
                                         className="d-block w-100"
-                                        src="/img/credit_card.png"
+                                        src="http://localhost:1337/uploads/credit_card_221539a838.png?updated_at=2022-04-21T23:52:10.666Z"
                                         alt="Third slide"
                                     />
                                 </Carousel.Item>

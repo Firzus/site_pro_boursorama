@@ -36,19 +36,14 @@
       "type": "string",
       "required": true
     },
-    "Newletter": {
-      "type": "integer",
-      "required": true,
-      "default": 0,
-      "private": true,
-      "max": 1,
-      "min": 0
-    },
     "commande": {
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::commande.commande",
       "inversedBy": "client"
+    },
+    "Newsletter": {
+      "type": "boolean"
     }
   }
 }
